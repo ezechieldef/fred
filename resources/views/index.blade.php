@@ -310,7 +310,7 @@
                 </p>
             </div>
             <div class="col-md-6 col-12 text-end ">
-                <img src="{{ asset('img/photoFred.png') }}" class="rounded pt-3 px-3" alt=""
+                <img src="{{ asset('img/photoFred.png') }}" class="rounded pt-3 px-3 img-fluid" alt=""
                     style="background:rgba(0,0,0,.2)">
             </div>
         </div>
