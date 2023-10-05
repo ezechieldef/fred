@@ -22,21 +22,23 @@
             <div class="container">
                 <div class="p-6">
                     <div class="" style="height: 60vh"></div>
-                    <h1 class="text-white ">Parler Anglais Sans Fautes</h1>
-
-                    <button class=" btn btn-warning text-white btn-lg" onclick="payer()">Acheter Maintenant</button>
+                    <h1 class="text-white">Parler Anglais Sans Fautes</h1>
+                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat culpa,
+                        voluptate quos excepturi debitis magnam. Minima porro ipsum nulla ipsam ullam rerum maxime qui?
+                        Nam in doloribus ab amet odio.</p>
+                    <button class=" btn btn-warning text-white" onclick="payer()">Acheter Maintenant</button>
                     <div class="" style="height: 20vh"></div>
 
                 </div>
             </div>
         </div>
     </div>
-    <div class="container py-3">
+    <div class="container pb-3" style="height: 100vh">
         <div class="row">
-            <div class="col-md-6 col-12">
+            <div class="col-6">
                 <img src="{{ asset('img/bestSeller.jpeg') }}" alt="" class="img-fluid">
             </div>
-            <div class="col-md-6 col-12 align-self-center">
+            <div class="col-6 align-self-center">
                 <h1>Best Seller</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate repellat aliquam error soluta
                     adipisci debitis a enim distinctio ipsa odit. Omnis nihil quam eum distinctio. Facere sunt mollitia
@@ -46,20 +48,17 @@
                     inventore eveniet ipsum, culpa unde harum deleniti quasi at placeat distinctio quas atque? Veritatis
                     illo quis, doloribus quasi harum error sit officiis sunt ducimus, amet doloremque ipsam illum, magni
                     voluptates. Modi, praesentium atque?</p>
-
-
-
-                <button class="btn btn-warning btn-lg" onclick="payer()">Acheter Maintenant</button>
+                <button class="btn btn-warning" onclick="payer()">Acheter Maintenant</button>
             </div>
         </div>
         <div class="" style="height: 10vh"></div>
     </div>
 
 
-    <div class="container py-5">
+    <div class="container" style="height: 100vh">
         <div class="row">
-            <h2 class="text-center py-3">Six problèmes que résoud le livre</h2>
-            <div class="col-md-6 col-12 align-self-center">
+            <h2 class="text-center pt-3">Six problèmes que résoud le livre</h2>
+            <div class="col-6 align-self-center">
 
                 <div class="accordion accordion-flush border p-3" id="accordionFlushExample">
                     <div class="accordion-item">
@@ -176,20 +175,20 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-12">
-                <img src="{{ asset('img/pb-solution.jpg') }}" alt="" class="img-fluid">
+            <div class="col-6">
+                <img src="{{ asset('img/pb-solution.jpg') }}" alt="">
             </div>
         </div>
         {{-- <div class="" style="height: 10vh"></div> --}}
     </div>
 
-    <div class="container">
+    <div class="container" style="height: 100vh">
         <div class="row">
             <h2 class="text-center pt-3">Les 5 raisons pour lesquels vous devez acheter cet ebook</h2>
-            <div class="col-md-6 col-12">
+            <div class="col-6">
                 <img src="{{ asset('img/happy.webp') }}" alt="" class="img-fluid">
             </div>
-            <div class="col-md-6 col-12 align-self-center mt-4">
+            <div class="col-6 align-self-center mt-4">
 
                 <div class="accordion accordion-flush border p-3" id="accordionFlushExample2">
                     <div class="accordion-item">
@@ -279,7 +278,7 @@
             </div>
 
             <div class="d-flex align-items-center justify-content-center mt-4">
-                <button class="btn btn-warning btn-lg" onclick="payer()">Acheter Maintenant</button>
+                <button class="btn btn-warning" onclick="payer()">Acheter Maintenant</button>
             </div>
         </div>
         {{-- <div class="" style="height: 10vh"></div> --}}
@@ -287,9 +286,9 @@
     </div>
 
 
-    <div class="container py-5">
+    <div class="container">
         <div class="row">
-            <div class="col-md-6 col-12">
+            <div class="col-6">
                 <h1>Auteur : Fred TOSSA</h1>
                 <p>
                     Fred TOSSA est un éminent professionnel du domaine de l’administration des affaires, se distinguant
@@ -309,36 +308,32 @@
                     langue anglaise.
                 </p>
             </div>
-            <div class="col-md-6 col-12 text-end ">
-                <img src="{{ asset('img/photoFred.png') }}" class="rounded pt-3 px-3" alt=""
-                    style="background:rgba(0,0,0,.2)">
-            </div>
         </div>
     </div>
 
 
-    <div class="container-fluid py-5" style="background: linear-gradient(to right, #87ceeb, #00bfff);">
+    <div class="container-fluid py-5" style="background: linear-gradient(to right, #87ceeb, #00bfff); height: 50vh">
         <div class="container text-white ">
             <h2>Besoin d'Assistance ?</h2>
             <p>Besoin d’assistance ou de conseils pour acheter cet eBook ou Besoin de Parler Anglais en 3 mois Top
                 Chrono comme un anglophone sans Voyager dans un Pays Anglophone contacter moi sur le +22962907536</p>
             <p>(WHATSAPP ET TELEGRAMME)</p>
             <div class="text-end">
-                <a class="btn btn-success text-white" href="https://wa.me/22962907536">
+                <div class="btn btn-success text-white">
                     <i class="fa-brands fa-whatsapp"></i>
                     Whatsapp
-                </a>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-12 align-self-center">
+            <div class="col-6 align-self-center">
                 <img src="{{ asset('img/online.png') }}" alt="" class="img-fluid">
             </div>
-            <div class="col-md-6 col-12 align-self-center">
-                <h1>ANGLAIS SANS VOYAGER 3.0</h1>
+            <div class="col-6 align-self-center">
+                <h1>ANGLAIS SANS VOYAGER 2.0</h1>
                 <h6>Découvrez ma méthode</h6>
                 <p>
                     Plus besoin de voyager dans un pays anglophone pour apprendre ou faire un bain linguistique et
@@ -364,15 +359,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
-
-    <style>
-        * {
-            font-family: "Poppins", sans-serif;
-        }
-    </style>
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.kkiapay.me/k.js"></script>
     <script>
         function ancienPaiement(btn) {
@@ -435,6 +422,16 @@
             });
         }
     </script>
+
+    <style>
+        * {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+
+
+
+
 </body>
 
 
