@@ -18,3 +18,4 @@ Route::get('/', function () {
     return view('index');
 });
 Route::get('/apres-paiement/{transactionid}', [Controller::class, 'getPDF']);
+Route::get('/download/{transactionid}', [Controller::class, 'download'])->name("download");

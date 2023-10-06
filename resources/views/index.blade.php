@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fred Ebook</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    {{-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"> --}}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -38,14 +39,9 @@
             </div>
             <div class="col-md-6 col-12 align-self-center">
                 <h1>Best Seller</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate repellat aliquam error soluta
-                    adipisci debitis a enim distinctio ipsa odit. Omnis nihil quam eum distinctio. Facere sunt mollitia
-                    assumenda possimus velit, praesentium officiis cupiditate obcaecati? Neque, iusto quis a, quia
-                    adipisci cum voluptatem excepturi impedit quidem eveniet quas nobis eligendi nisi dolores debitis
-                    fuga odit libero maiores, dolore ut? Vero porro excepturi ratione veritatis magnam quia assumenda
-                    inventore eveniet ipsum, culpa unde harum deleniti quasi at placeat distinctio quas atque? Veritatis
-                    illo quis, doloribus quasi harum error sit officiis sunt ducimus, amet doloremque ipsam illum, magni
-                    voluptates. Modi, praesentium atque?</p>
+                <p>Rejoignez des milliers de personnes intelligentes qui ont fait de 'Parler anglais sans fautes' leur
+                    choix numéro 1 en Afrique francophone pour parler anglais sans la moindre faute. Votre voyage vers
+                    la perfection linguistique commence ici</p>
 
 
 
@@ -55,7 +51,7 @@
         <div class="" style="height: 10vh"></div>
     </div>
 
-
+    {{--
     <div class="container py-5">
         <div class="row">
             <h2 class="text-center py-3">Six problèmes que résoud le livre</h2>
@@ -180,8 +176,8 @@
                 <img src="{{ asset('img/pb-solution.jpg') }}" alt="" class="img-fluid">
             </div>
         </div>
-        {{-- <div class="" style="height: 10vh"></div> --}}
-    </div>
+
+    </div> --}}
 
     <div class="container">
         <div class="row">
@@ -195,8 +191,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse1" aria-expanded="false"
-                                aria-controls="flush-collapse1">
+                                data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
                                 <span class="bg-warning px-2 py-1 me-2 rounded text-white">1.</span>Amélioration de la
                                 communication
                             </button>
@@ -211,8 +206,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse2" aria-expanded="false"
-                                aria-controls="flush-collapse2">
+                                data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
                                 <span class="bg-warning px-2 py-1 me-2 rounded text-white">2.</span>Correction des
                                 erreurs courantes
                             </button>
@@ -227,8 +221,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse3" aria-expanded="false"
-                                aria-controls="flush-collapse3">
+                                data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
                                 <span class="bg-warning px-2 py-1 me-2 rounded text-white">3.</span> Confiance accrue
                             </button>
                         </h2>
@@ -243,8 +236,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse4" aria-expanded="false"
-                                aria-controls="flush-collapse4">
+                                data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
                                 <span class="bg-warning px-2 py-1 me-2 rounded text-white">4.</span>Gain de temps et
                                 d'argent
                             </button>
@@ -290,7 +282,7 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-md-6 col-12">
-                <h1>Auteur : Fred TOSSA</h1>
+                <h1>Auteur : Fred TOSSA, MBA HR</h1>
                 <p>
                     Fred TOSSA est un éminent professionnel du domaine de l’administration des affaires, se distinguant
                     particulièrement dans le domaine des Ressources Humaines. Titulaire d’un prestigieux Master en
@@ -332,20 +324,28 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container mt-4">
         <div class="row">
             <div class="col-md-6 col-12 align-self-center">
-                <img src="{{ asset('img/online.png') }}" alt="" class="img-fluid">
+                <img src="{{ asset('img/nouvelleMethode.jpeg') }}" alt="" class="img-fluid rounded-3">
+
             </div>
             <div class="col-md-6 col-12 align-self-center">
-                <h1>ANGLAIS SANS VOYAGER 3.0</h1>
-                <h6>Découvrez ma méthode</h6>
+                <h1>Découvrez ma méthode originale pour parler anglais en 90 jours Top Chrono sans un bain linguistique
+                </h1>
+
                 <p>
                     Plus besoin de voyager dans un pays anglophone pour apprendre ou faire un bain linguistique et
                     apprendre l’anglais. <br>
 
                     Mon Équipe et Moi seront votre Coach Privé chaque jour sur Zoom, Télégramme, WhatsApp etc du Lundi
                     au Vendredi pour vous aider à pratiquer l’anglais comme si vous étiez dans un pays anglophone</p>
+                <div class="text-end">
+                    <a class="btn btn-success text-white" href="https://wa.me/22962907536">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Whatsapp
+                    </a>
+                </div>
             </div>
 
         </div>
@@ -354,7 +354,7 @@
     <div class="w-100">
         <footer class="bg-light text-black text-center py-3">
             <div class="container">
-                <span>&copy; 2023 Votre Entreprise. Tous droits réservés.</span>
+                <span>&copy; 2023 . Tous droits réservés.</span>
             </div>
         </footer>
 
@@ -367,7 +367,7 @@
 
     <style>
         * {
-            font-family: "Poppins", sans-serif;
+            font-family: "Helvetica", "Montserrat";
         }
     </style>
 
