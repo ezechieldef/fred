@@ -69,7 +69,7 @@
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Plus de 150 erreurs typiques commises par les francophones
+                            <div class="accordion-body">Plus de 100 erreurs typiques commises par les francophones
                                 lorsqu’ils parlent anglais sont répertoriées et expliquées en détail. Cet eBook vous
                                 permettra de comprendre les pièges les plus courants de la langue anglaise.</div>
                         </div>
@@ -213,7 +213,7 @@
                         </h2>
                         <div id="flush-collapse2" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample2">
-                            <div class="accordion-body">En identifiant et corrigeant plus de 150 erreurs typiques
+                            <div class="accordion-body">En identifiant et corrigeant plus de 100 erreurs typiques
                                 commises par les francophones en anglais, cet ebook vous permet d’éviter ces pièges
                                 courants et de parler de manière plus fluide et précise.</div>
                         </div>
