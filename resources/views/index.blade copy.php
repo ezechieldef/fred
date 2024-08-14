@@ -194,8 +194,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse1" aria-expanded="false"
-                                aria-controls="flush-collapse1">
+                                data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
                                 <span class="bg-warning px-2 py-1 me-2 rounded text-white">1.</span>Amélioration de la
                                 communication
                             </button>
@@ -210,8 +209,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse2" aria-expanded="false"
-                                aria-controls="flush-collapse2">
+                                data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
                                 <span class="bg-warning px-2 py-1 me-2 rounded text-white">2.</span>Correction des
                                 erreurs courantes
                             </button>
@@ -226,8 +224,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse3" aria-expanded="false"
-                                aria-controls="flush-collapse3">
+                                data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
                                 <span class="bg-warning px-2 py-1 me-2 rounded text-white">3.</span> Confiance accrue
                             </button>
                         </h2>
@@ -242,8 +239,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse4" aria-expanded="false"
-                                aria-controls="flush-collapse4">
+                                data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
                                 <span class="bg-warning px-2 py-1 me-2 rounded text-white">4.</span>Gain de temps et
                                 d'argent
                             </button>
@@ -259,8 +255,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse5" aria-expanded="false"
-                                aria-controls="flush-collapse5">
+                                data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
                                 <span class="bg-warning px-2 py-1 me-2 rounded text-white">5.</span>Accessible et
                                 pratique
                             </button>
@@ -362,71 +357,79 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.kkiapay.me/k.js"></script>
     <script>
-        function ancienPaiement(btn) {
-            var code = btn.getAttribute('code');
-            var montant = btn.getAttribute('montant');
-            Swal.fire({
-                title: 'Entrer la référence du paiement se trouvant dans l\'SMS  ou sur la facture reçu après le paiement',
-                input: 'text',
-                inputAttributes: {
-                    autocapitalize: 'off'
-                },
-                showCancelButton: true,
-                confirmButtonText: 'Soumettre',
-                cancelButtonText: 'Annuler',
-                confirmButtonColor: '#39cb7f',
-                showLoaderOnConfirm: true,
-                preConfirm: (saisi) => {
-                    location.href = '/apres-paiement/' + code + '/' + saisi;
-                },
-                allowOutsideClick: () => !Swal.isLoading()
-            }).then((result) => {
+    function ancienPaiement(btn) {
+        var code = btn.getAttribute('code');
+        var montant = btn.getAttribute('montant');
+        Swal.fire({
+            title: 'Entrer la référence du paiement se trouvant dans l\'SMS  ou sur la facture reçu après le paiement',
+            input: 'text',
+            inputAttributes: {
+                autocapitalize: 'off'
+            },
+            showCancelButton: true,
+            confirmButtonText: 'Soumettre',
+            cancelButtonText: 'Annuler',
+            confirmButtonColor: '#39cb7f',
+            showLoaderOnConfirm: true,
+            preConfirm: (saisi) => {
+                location.href = '/apres-paiement/' + code + '/' + saisi;
+            },
+            allowOutsideClick: () => !Swal.isLoading()
+        }).then((result) => {
 
-            })
-        }
-
-
-        function payer() {
+        })
+    }
 
 
-            // alert({{ env('KKIA_SANBOX') ? 'true' : 'false' }});
+    function payer() {
 
-            const Toast = Swal.mixin({
-                toast: true,
-                position: 'top-end',
-                showConfirmButton: false,
-                timer: 3000,
-                timerProgressBar: true,
-                didOpen: (toast) => {
-                    toast.addEventListener('mouseenter', Swal.stopTimer)
-                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+
+        // alert({{ env('KKIA_SANBOX') ? 'true' : 'false' }});
+
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+
+        Toast.fire({
+            icon: 'success',
+            title: 'Paiement déclenché, Veuillez patientez un instant svp'
+        })
+
+        openKkiapayWidget({
+            amount: {
+                {
+                    env('MONTANT_EBOOK')
                 }
-            })
+            },
+            position: "center",
+            sandbox: {
+                {
+                    env('KKIA_SANDBOX') ? 'true' : 'false'
+                }
+            },
+            data: "",
+            theme: "blue",
+            key: "{{ env('KKIA_PUBLIC_KEY') }}"
+        });
 
-            Toast.fire({
-                icon: 'success',
-                title: 'Paiement déclenché, Veuillez patientez un instant svp'
-            })
-
-            openKkiapayWidget({
-                amount: {{ env('MONTANT_EBOOK') }},
-                position: "center",
-                sandbox: {{ env('KKIA_SANDBOX') ? 'true' : 'false' }},
-                data: "",
-                theme: "blue",
-                key: "{{ env('KKIA_PUBLIC_KEY') }}"
-            });
-
-            addSuccessListener(response => {
-                location.href = '/apres-paiement/' + response['transactionId'];
-            });
-        }
+        addSuccessListener(response => {
+            location.href = '/apres-paiement/' + response['transactionId'];
+        });
+    }
     </script>
 
     <style>
-        * {
-            font-family: "Poppins", sans-serif;
-        }
+    * {
+        font-family: "Poppins", sans-serif;
+    }
     </style>
 
 

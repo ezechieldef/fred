@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fred Ebook</title>
-    {{-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"> --}}
+    {{--
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"> --}}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -23,9 +24,9 @@
             <div class="container">
                 <div class="p-6">
                     <div class="" style="height: 60vh"></div>
-                    <h1 class="text-white ">Parler Anglais Sans Fautes</h1>
+                    <h1 class="text-white ">GUIDE PDF 100 FAUTES COURANTES DES FRANCOPHONES EN ANGLAIS</h1>
+                    @include("partials.buttonCommander")
 
-                    <button class=" btn btn-warning text-white btn-lg" onclick="payer()">Acheter Maintenant</button>
                     <div class="" style="height: 20vh"></div>
 
                 </div>
@@ -35,7 +36,7 @@
     <div class="container py-3">
         <div class="row">
             <div class="col-md-6 col-12">
-                <img src="{{ asset('img/bestSeller.jpeg') }}" alt="" class="img-fluid">
+                <img src="{{ asset('img/photoLivre.png') }}" alt="" class="img-fluid">
             </div>
             <div class="col-md-6 col-12 align-self-center">
                 <h1>Best Seller</h1>
@@ -43,9 +44,15 @@
                     choix numéro 1 en Afrique francophone pour parler anglais sans la moindre faute. Votre voyage vers
                     la perfection linguistique commence ici</p>
 
+                <h2>PRIX PROMO :
+                    <span class="text-danger fw-bold display-6">3.000 F CFA</span>
+                </h2>
+                <h5 class="text-secondary "> Au lieu de :
+                    <span class="text-decoration-line-through">10.000 F</span>
 
-
-                <button class="btn btn-warning btn-lg" onclick="payer()">Acheter Maintenant</button>
+                </h5>
+                <br>
+                @include("partials.buttonCommander")
             </div>
         </div>
         <div class="" style="height: 10vh"></div>
@@ -70,7 +77,7 @@
                         <div id="flush-collapseOne" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">Plus de 100 erreurs typiques commises par les francophones
-                                lorsqu’ils parlent anglais sont répertoriées et expliquées en détail. Cet eBook vous
+                                lorsqu’ils parlent anglais sont répertoriées et expliquées en détail. ce guide vous
                                 permettra de comprendre les pièges les plus courants de la langue anglaise.</div>
                         </div>
                     </div>
@@ -85,7 +92,7 @@
                         </h2>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Pour chaque erreur présentée, cet eBook offre des corrections
+                            <div class="accordion-body">Pour chaque erreur présentée, ce guide offre des corrections
                                 détaillées et des explications claires. Vous apprendrez comment éviter ces erreurs et
                                 comment s’exprimer correctement en anglais.</div>
                         </div>
@@ -101,7 +108,7 @@
                         <div id="flush-collapseThree" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <li>Cet eBook identifie et explique les « faux amis », des mots qui ressemblent à des
+                                <li>ce guide identifie et explique les « faux amis », des mots qui ressemblent à des
                                     mots en français mais ont des significations différentes en anglais.</li>
                                 <li>Exemples de faux amis courants, tels que « actuellement » (currently en anglais) qui
                                     ne signifie pas « actually » en anglais.</li>
@@ -121,7 +128,7 @@
                         <div id="flush-collapseFour" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <li>Cet Ebook se concentre sur les erreurs de structure grammaticale et de syntaxe que
+                                <li>ce guide se concentre sur les erreurs de structure grammaticale et de syntaxe que
                                     font souvent les francophones en anglais.</li>
                                 <li>Exemples de phrases mal construites et explications sur la manière de les corriger.
                                 </li>
@@ -142,7 +149,7 @@
                         <div id="flush-collapseFive" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <li>Cet Ebook traite des erreurs de traduction fréquentes lorsqu’on passe du français à
+                                <li>ce guide traite des erreurs de traduction fréquentes lorsqu’on passe du français à
                                     l’anglais.</li>
                                 <li>Exemples de traductions littérales qui peuvent donner lieu à des malentendus.</li>
                                 <li> Des conseils pour comprendre le contexte et traduire avec précision.</li>
@@ -161,7 +168,7 @@
                         <div id="flush-collapseSix" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <li>Cet eBook explique les concepts précédemment enseignés en profondeur par des
+                                <li>ce guide explique les concepts précédemment enseignés en profondeur par des
                                     dialogues et des situations réelles de la vie quotidienne.</li>
                                 <li>Exemples de conversations en anglais, suivis de corrections pour montrer comment
                                     éviter les erreurs.</li>
@@ -174,16 +181,16 @@
             </div>
             <div class="col-md-6 col-12">
                 <img src="{{ asset('img/pb-solution.jpg') }}" alt="" class="img-fluid">
-            </div>
-        </div>
+    </div>
+    </div>
 
     </div> --}}
 
     <div class="container">
         <div class="row">
-            <h2 class="text-center pt-3">Les 5 raisons pour lesquels vous devez acheter cet ebook</h2>
+            <h2 class="text-center pt-3">Les 5 raisons pour lesquels vous devez acheter ce guide</h2>
             <div class="col-md-6 col-12">
-                <img src="{{ asset('img/happy.webp') }}" alt="" class="img-fluid">
+                <img src="{{ asset('img/photoPhone.png') }}" alt="" class="img-fluid">
             </div>
             <div class="col-md-6 col-12 align-self-center mt-4">
 
@@ -198,7 +205,7 @@
                         </h2>
                         <div id="flush-collapse1" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample2">
-                            <div class="accordion-body"> Cet ebook offre aux francophones l’opportunité d’améliorer
+                            <div class="accordion-body"> ce guide offre aux francophones l’opportunité d’améliorer
                                 leur communication en anglais, ce qui peut être essentiel dans le monde professionnel et
                                 personnel.</div>
                         </div>
@@ -214,7 +221,7 @@
                         <div id="flush-collapse2" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample2">
                             <div class="accordion-body">En identifiant et corrigeant plus de 100 erreurs typiques
-                                commises par les francophones en anglais, cet ebook vous permet d’éviter ces pièges
+                                commises par les francophones en anglais, ce guide vous permet d’éviter ces pièges
                                 courants et de parler de manière plus fluide et précise.</div>
                         </div>
                     </div>
@@ -252,8 +259,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse5" aria-expanded="false"
-                                aria-controls="flush-collapse5">
+                                data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
                                 <span class="bg-warning px-2 py-1 me-2 rounded text-white">5.</span>Accessible et
                                 pratique
                             </button>
@@ -261,7 +267,7 @@
                         <div id="flush-collapse5" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample2">
                             <div class="accordion-body">
-                                Cet ebook vous offre une manière accessible et pratique d’améliorer ses compétences
+                                ce guide vous offre une manière accessible et pratique d’améliorer ses compétences
                                 linguistiques, en permettant aux utilisateurs d’apprendre à leur propre rythme, où
                                 qu’ils se trouvent.
                             </div>
@@ -271,7 +277,8 @@
             </div>
 
             <div class="d-flex align-items-center justify-content-center mt-4">
-                <button class="btn btn-warning btn-lg" onclick="payer()">Acheter Maintenant</button>
+                @include("partials.buttonCommander")
+
             </div>
         </div>
         {{-- <div class="" style="height: 10vh"></div> --}}
@@ -282,8 +289,8 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-md-6 col-12">
-                <h1>Auteur : Fred TOSSA, MBA HR</h1>
-                <p>
+                <h2>Auteur : Fred TOSSA, MBA HR</h2>
+                <p style="text-align: justify;">
                     Fred TOSSA est un éminent professionnel du domaine de l’administration des affaires, se distinguant
                     particulièrement dans le domaine des Ressources Humaines. Titulaire d’un prestigieux Master en
                     Business Administration avec une spécialisation en Ressources Humaines, il incarne l’excellence
@@ -303,16 +310,44 @@
             </div>
             <div class="col-md-6 col-12 text-end ">
                 <img src="{{ asset('img/photoFred.png') }}" class="rounded pt-3 px-3 img-fluid" alt=""
-                    style="background:rgba(0,0,0,.2)">
+                    style="backgrond:rgba(0,0,0,.2)">
             </div>
         </div>
     </div>
 
+    <!-- Les photos -->
+    <div class="container py-5">
+        <div class="row">
+            <!-- @for ($i = 1; $i + 1 <= 12; $i = $i + 2)
+                <div class="col-md-6 col-12">
+                    <img src="{{ asset('img/photo' . $i . '.jpeg') }}" class="rounded pt-3 px-3 img-fluid w-100">
+                </div>
+                <div class="col-md-6 col-12">
+                    <img src="{{ asset('img/photo' . ($i + 1) . '.jpeg') }}" class="rounded pt-3 px-3 img-fluid w-100">
+                </div>
+                <div class="col-12 text-center my-3">
+                    @include("partials.buttonCommander")
+                </div>
+            @endfor -->
+            @for ($i = 1; $i <= 11; $i++) <div class="col-md-6 col-12">
+                <img src="{{ asset('img/photo' . $i . '.jpeg') }}" class="rounded-2 pt-3 px-3 img-fluid w-100">
+        </div>
+        @if ($i % 2 == 0)
+        <div class="col-12 text-center my-3">
+            @include("partials.buttonCommander")
+        </div>
+        @endif
+
+        @endfor
+
+    </div>
+    </div>
+    <!-- Les photos End -->
 
     <div class="container-fluid py-5" style="background: linear-gradient(to right, #87ceeb, #00bfff);">
         <div class="container text-white ">
             <h2>Besoin d'Assistance ?</h2>
-            <p>Besoin d’assistance ou de conseils pour acheter cet eBook ou Besoin de Parler Anglais en 3 mois Top
+            <p>Besoin d’assistance ou de conseils pour acheter ce guide ou Besoin de Parler Anglais en 3 mois Top
                 Chrono comme un anglophone sans Voyager dans un Pays Anglophone contacter moi sur le +22962907536</p>
             <p>(WHATSAPP ET TELEGRAMME)</p>
             <div class="text-end">
@@ -324,7 +359,7 @@
         </div>
     </div>
 
-    <div class="container mt-4">
+    <!-- <div class="container mt-4">
         <div class="row">
             <div class="col-md-6 col-12 align-self-center">
                 <img src="{{ asset('img/nouvelleMethode.jpeg') }}" alt="" class="img-fluid rounded-3">
@@ -349,7 +384,7 @@
             </div>
 
         </div>
-    </div>
+    </div> -->
 
     <div class="w-100">
         <footer class="bg-light text-black text-center py-3">
@@ -366,9 +401,9 @@
     </script>
 
     <style>
-        * {
-            font-family: "Helvetica", "Montserrat";
-        }
+    * {
+        font-family: "Helvetica", "Montserrat";
+    }
     </style>
 
 
@@ -377,69 +412,77 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.kkiapay.me/k.js"></script>
     <script>
-        function ancienPaiement(btn) {
-            var code = btn.getAttribute('code');
-            var montant = btn.getAttribute('montant');
-            Swal.fire({
-                title: 'Entrer la référence du paiement se trouvant dans l\'SMS  ou sur la facture reçu après le paiement',
-                input: 'text',
-                inputAttributes: {
-                    autocapitalize: 'off'
-                },
-                showCancelButton: true,
-                confirmButtonText: 'Soumettre',
-                cancelButtonText: 'Annuler',
-                confirmButtonColor: '#39cb7f',
-                showLoaderOnConfirm: true,
-                preConfirm: (saisi) => {
-                    location.href = '/apres-paiement/' + code + '/' + saisi;
-                },
-                allowOutsideClick: () => !Swal.isLoading()
-            }).then((result) => {
+    function ancienPaiement(btn) {
+        var code = btn.getAttribute('code');
+        var montant = btn.getAttribute('montant');
+        Swal.fire({
+            title: 'Entrer la référence du paiement se trouvant dans l\'SMS  ou sur la facture reçu après le paiement',
+            input: 'text',
+            inputAttributes: {
+                autocapitalize: 'off'
+            },
+            showCancelButton: true,
+            confirmButtonText: 'Soumettre',
+            cancelButtonText: 'Annuler',
+            confirmButtonColor: '#39cb7f',
+            showLoaderOnConfirm: true,
+            preConfirm: (saisi) => {
+                location.href = '/apres-paiement/' + code + '/' + saisi;
+            },
+            allowOutsideClick: () => !Swal.isLoading()
+        }).then((result) => {
 
-            })
-        }
-
-
-        function payer() {
+        })
+    }
 
 
-            // alert({{ env('KKIA_SANBOX') ? 'true' : 'false' }});
+    function payer() {
 
-            const Toast = Swal.mixin({
-                toast: true,
-                position: 'top-end',
-                showConfirmButton: false,
-                timer: 3000,
-                timerProgressBar: true,
-                didOpen: (toast) => {
-                    toast.addEventListener('mouseenter', Swal.stopTimer)
-                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+
+        // alert({{ env('KKIA_SANBOX') ? 'true' : 'false' }});
+
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+
+        Toast.fire({
+            icon: 'success',
+            title: 'Paiement déclenché, Veuillez patientez un instant svp'
+        })
+
+        openKkiapayWidget({
+            amount: {
+                {
+                    env('MONTANT_EBOOK')
                 }
-            })
+            },
+            position: "center",
+            sandbox: {
+                {
+                    env('KKIA_SANDBOX') ? 'true' : 'false'
+                }
+            },
+            data: "",
+            theme: "blue",
+            key: "{{ env('KKIA_PUBLIC_KEY') }}"
+        });
 
-            Toast.fire({
-                icon: 'success',
-                title: 'Paiement déclenché, Veuillez patientez un instant svp'
-            })
-
-            openKkiapayWidget({
-                amount: {{ env('MONTANT_EBOOK') }},
-                position: "center",
-                sandbox: {{ env('KKIA_SANDBOX') ? 'true' : 'false' }},
-                data: "",
-                theme: "blue",
-                key: "{{ env('KKIA_PUBLIC_KEY') }}"
-            });
-
-            addSuccessListener(response => {
-                location.href = '/apres-paiement/' + response['transactionId'];
-            });
-        }
+        addSuccessListener(response => {
+            location.href = '/apres-paiement/' + response['transactionId'];
+        });
+    }
     </script>
 </body>
 
-
+@include('partials.style.cssFlashButton')
 
 
 </html>
