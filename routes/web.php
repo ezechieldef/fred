@@ -16,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name("home");
 Route::get('/apres-paiement/{transactionid}', [Controller::class, 'getPDF']);
 Route::get('/download/{transactionid}', [Controller::class, 'download'])->name("download");

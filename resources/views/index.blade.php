@@ -3,8 +3,14 @@
 
 <head>
     <meta charset="utf-8">
+    <meta property="og:title" content="Anglais 100 Fautes">
+    <meta property="og:description" content="Guide des fautes courantes en anglais">
+    <meta property="og:image" content="{{ asset('img/fred.jpg') }}">
+    <meta property="og:url" content="{{ route('home') }}">
+    <meta property="og:type" content="website">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fred Ebook</title>
+    <title>Anglais 100 Fautes</title>
     {{--
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"> --}}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica">
@@ -25,7 +31,7 @@
                 <div class="p-6">
                     <div class="" style="height: 60vh"></div>
                     <h1 class="text-white ">GUIDE PDF 100 FAUTES COURANTES DES FRANCOPHONES EN ANGLAIS</h1>
-                    @include("partials.buttonCommander")
+                    @include('partials.buttonCommander')
 
                     <div class="" style="height: 20vh"></div>
 
@@ -52,7 +58,7 @@
 
                 </h5>
                 <br>
-                @include("partials.buttonCommander")
+                @include('partials.buttonCommander')
             </div>
         </div>
         <div class="" style="height: 10vh"></div>
@@ -243,7 +249,8 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                                data-bs-target="#flush-collapse4" aria-expanded="false"
+                                aria-controls="flush-collapse4">
                                 <span class="bg-warning px-2 py-1 me-2 rounded text-white">4.</span>Gain de temps et
                                 d'argent
                             </button>
@@ -259,7 +266,8 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                                data-bs-target="#flush-collapse5" aria-expanded="false"
+                                aria-controls="flush-collapse5">
                                 <span class="bg-warning px-2 py-1 me-2 rounded text-white">5.</span>Accessible et
                                 pratique
                             </button>
@@ -277,7 +285,7 @@
             </div>
 
             <div class="d-flex align-items-center justify-content-center mt-4">
-                @include("partials.buttonCommander")
+                @include('partials.buttonCommander')
 
             </div>
         </div>
@@ -319,28 +327,28 @@
     <div class="container py-5">
         <div class="row">
             <!-- @for ($i = 1; $i + 1 <= 12; $i = $i + 2)
-                <div class="col-md-6 col-12">
+<div class="col-md-6 col-12">
                     <img src="{{ asset('img/photo' . $i . '.jpeg') }}" class="rounded pt-3 px-3 img-fluid w-100">
                 </div>
                 <div class="col-md-6 col-12">
                     <img src="{{ asset('img/photo' . ($i + 1) . '.jpeg') }}" class="rounded pt-3 px-3 img-fluid w-100">
                 </div>
                 <div class="col-12 text-center my-3">
-                    @include("partials.buttonCommander")
+                    @include('partials.buttonCommander')
                 </div>
-            @endfor -->
-            @for ($i = 1; $i <= 11; $i++) <div class="col-md-6 col-12">
-                <img src="{{ asset('img/photo' . $i . '.jpeg') }}" class="rounded-2 pt-3 px-3 img-fluid w-100">
-        </div>
-        @if ($i % 2 == 0)
-        <div class="col-12 text-center my-3">
-            @include("partials.buttonCommander")
-        </div>
-        @endif
+@endfor -->
+            @for ($i = 1; $i <= 11; $i++)
+                <div class="col-md-6 col-12">
+                    <img src="{{ asset('img/photo' . $i . '.jpeg') }}" class="rounded-2 pt-3 px-3 img-fluid w-100">
+                </div>
+                @if ($i % 2 == 0)
+                    <div class="col-12 text-center my-3">
+                        @include('partials.buttonCommander')
+                    </div>
+                @endif
+            @endfor
 
-        @endfor
-
-    </div>
+        </div>
     </div>
     <!-- Les photos End -->
 
@@ -401,9 +409,9 @@
     </script>
 
     <style>
-    * {
-        font-family: "Helvetica", "Montserrat";
-    }
+        * {
+            font-family: "Helvetica", "Montserrat";
+        }
     </style>
 
 
@@ -412,73 +420,73 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.kkiapay.me/k.js"></script>
     <script>
-    function ancienPaiement(btn) {
-        var code = btn.getAttribute('code');
-        var montant = btn.getAttribute('montant');
-        Swal.fire({
-            title: 'Entrer la référence du paiement se trouvant dans l\'SMS  ou sur la facture reçu après le paiement',
-            input: 'text',
-            inputAttributes: {
-                autocapitalize: 'off'
-            },
-            showCancelButton: true,
-            confirmButtonText: 'Soumettre',
-            cancelButtonText: 'Annuler',
-            confirmButtonColor: '#39cb7f',
-            showLoaderOnConfirm: true,
-            preConfirm: (saisi) => {
-                location.href = '/apres-paiement/' + code + '/' + saisi;
-            },
-            allowOutsideClick: () => !Swal.isLoading()
-        }).then((result) => {
+        function ancienPaiement(btn) {
+            var code = btn.getAttribute('code');
+            var montant = btn.getAttribute('montant');
+            Swal.fire({
+                title: 'Entrer la référence du paiement se trouvant dans l\'SMS  ou sur la facture reçu après le paiement',
+                input: 'text',
+                inputAttributes: {
+                    autocapitalize: 'off'
+                },
+                showCancelButton: true,
+                confirmButtonText: 'Soumettre',
+                cancelButtonText: 'Annuler',
+                confirmButtonColor: '#39cb7f',
+                showLoaderOnConfirm: true,
+                preConfirm: (saisi) => {
+                    location.href = '/apres-paiement/' + code + '/' + saisi;
+                },
+                allowOutsideClick: () => !Swal.isLoading()
+            }).then((result) => {
 
-        })
-    }
-
-
-    function payer() {
+            })
+        }
 
 
-        // alert({{ env('KKIA_SANBOX') ? 'true' : 'false' }});
+        function payer() {
 
-        const Toast = Swal.mixin({
-            toast: true,
-            position: 'top-end',
-            showConfirmButton: false,
-            timer: 3000,
-            timerProgressBar: true,
-            didOpen: (toast) => {
-                toast.addEventListener('mouseenter', Swal.stopTimer)
-                toast.addEventListener('mouseleave', Swal.resumeTimer)
-            }
-        })
 
-        Toast.fire({
-            icon: 'success',
-            title: 'Paiement déclenché, Veuillez patientez un instant svp'
-        })
+            // alert({{ env('KKIA_SANBOX') ? 'true' : 'false' }});
 
-        openKkiapayWidget({
-            amount: {
-                {
-                    env('MONTANT_EBOOK')
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
                 }
-            },
-            position: "center",
-            sandbox: {
-                {
-                    env('KKIA_SANDBOX') ? 'true' : 'false'
-                }
-            },
-            data: "",
-            theme: "blue",
-            key: "{{ env('KKIA_PUBLIC_KEY') }}"
-        });
+            })
 
-        addSuccessListener(response => {
-            location.href = '/apres-paiement/' + response['transactionId'];
-        });
-    }
+            Toast.fire({
+                icon: 'success',
+                title: 'Paiement déclenché, Veuillez patientez un instant svp'
+            })
+
+            openKkiapayWidget({
+                amount: {
+                    {
+                        env('MONTANT_EBOOK')
+                    }
+                },
+                position: "center",
+                sandbox: {
+                    {
+                        env('KKIA_SANDBOX') ? 'true' : 'false'
+                    }
+                },
+                data: "",
+                theme: "blue",
+                key: "{{ env('KKIA_PUBLIC_KEY') }}"
+            });
+
+            addSuccessListener(response => {
+                location.href = '/apres-paiement/' + response['transactionId'];
+            });
+        }
     </script>
 </body>
 
