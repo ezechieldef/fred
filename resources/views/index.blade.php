@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta property="og:title" content="Anglais 100 Fautes">
     <meta property="og:description" content="Guide des fautes courantes en anglais">
-    <meta property="og:image" content="{{ asset('img/fred.jpg') }}">
+    <meta property="og:image" content="{{ asset('img/fred_book_cover.jpg') }}">
     <meta property="og:url" content="{{ route('home') }}">
     <meta property="og:type" content="website">
 
@@ -25,7 +25,7 @@
 <body>
 
     <div class="w-100"
-        style="background: url({{ asset('img/fred.jpg') }}); background-size:cover; background-repeat:no-repeat; background-position:bottom">
+        style="background: url({{ asset('img/fred_book_cover.jpg') }}); background-size:cover; background-repeat:no-repeat; background-position:bottom">
         <div class="container-fluid" style="background-color: rgba(0,0,0,0.3)">
             <div class="container">
                 <div class="p-6">
