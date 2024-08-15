@@ -45,7 +45,7 @@
                 <img src="{{ asset('img/photoLivre.png') }}" alt="" class="img-fluid">
             </div>
             <div class="col-md-6 col-12 align-self-center">
-                <h1>Best Seller</h1>
+                <h1>PLUS DE 300 PAGES</h1>
                 <p>Rejoignez des milliers de personnes intelligentes qui ont fait de 'Parler anglais sans fautes' leur
                     choix numéro 1 en Afrique francophone pour parler anglais sans la moindre faute. Votre voyage vers
                     la perfection linguistique commence ici</p>
@@ -211,7 +211,7 @@
                         </h2>
                         <div id="flush-collapse1" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample2">
-                            <div class="accordion-body"> ce guide offre aux francophones l’opportunité d’améliorer
+                            <div class="accordion-body"> Ce guide offre aux francophones l’opportunité d’améliorer
                                 leur communication en anglais, ce qui peut être essentiel dans le monde professionnel et
                                 personnel.</div>
                         </div>
@@ -275,7 +275,7 @@
                         <div id="flush-collapse5" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample2">
                             <div class="accordion-body">
-                                ce guide vous offre une manière accessible et pratique d’améliorer ses compétences
+                                Ce guide vous offre une manière accessible et pratique d’améliorer ses compétences
                                 linguistiques, en permettant aux utilisateurs d’apprendre à leur propre rythme, où
                                 qu’ils se trouvent.
                             </div>
@@ -397,7 +397,7 @@
     <div class="w-100">
         <footer class="bg-light text-black text-center py-3">
             <div class="container">
-                <span>&copy; 2023 . Tous droits réservés.</span>
+                <span>&copy; {{ date('Y') }} . Tous droits réservés.</span>
             </div>
         </footer>
 
