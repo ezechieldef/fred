@@ -56,10 +56,10 @@
                     la perfection linguistique commence ici</p>
 
                 <h2>PRIX PROMO :
-                    <span class="text-danger fw-bold display-6">2.000 F CFA</span>
+                    <span class="text-danger fw-bold display-6">5.000 F CFA</span>
                 </h2>
                 <h5 class="text-secondary "> Au lieu de :
-                    <span class="text-decoration-line-through">10.000 F</span>
+                    <span class="text-decoration-line-through">15.000 F</span>
 
                 </h5>
                 <br>
@@ -342,7 +342,7 @@
                     @include('partials.buttonCommander')
                 </div>
 @endfor -->
-            @for ($i = 1; $i <= 11; $i++)
+            @for ($i = 1; $i <= 2; $i++)
                 <div class="col-md-6 col-12">
                     <img src="{{ asset('img/photo' . $i . '.jpeg') }}" class="rounded-2 pt-3 px-3 img-fluid w-100">
                 </div>
@@ -359,9 +359,26 @@
 
     <div class="container-fluid py-5" style="background: linear-gradient(to right, #87ceeb, #00bfff);">
         <div class="container text-white ">
-            <h2>Besoin d'Assistance ?</h2>
-            <p>Besoin d’assistance ou de conseils pour acheter ce guide ou Besoin de Parler Anglais en 3 mois Top
-                Chrono comme un anglophone sans Voyager dans un Pays Anglophone contacter moi sur le +22962907536</p>
+            <h2>🎁 BONUS EXCLUSIF APRÈS ACHAT DU GUIDE ! 🎁</h2>
+            <p>En achetant votre GUIDE PDF " 100 fautes courantes des francophones en anglais ", vous bénéficiez d’un bonus exceptionnel pour accélérer votre progression en anglais : <br>
+
+                🚀 Intégration à l’Académie Free English du Coach Fred TOSSA et pratiquez l’anglais en toute simplicité et ceci gratuitement !<br><br>
+
+                ✅ 3 mois de cours oraux d’anglais 100% gratuits<br><br>
+
+                 24 séances interactives pour améliorer votre aisance à l’oral<br>
+
+                 Mode : En groupe avec d’autres apprenants, pour une immersion dynamique<br>
+
+                 Sessions chaque samedi et dimanche soir de 19h à 21h via Google Meet<br><br>
+                 Grâce à ces cours gratuits, vous pourrez :<br><br>
+                ✔ Gagner en confiance à l’oral<br>
+                ✔ Améliorer votre prononciation et votre fluidité<br>
+                ✔ Échanger avec d’autres apprenants et progresser ensemble<br><br>
+
+                📢 CONTACTER NOUS VIA WHATSAPP SUR LE +22940458262 POUR RECEVOIR LIEN D'INTÉGRATION DU FORUM DE L'ACADÉMIE VIA WHATSAPP<br><br>
+
+                💡 Passez à l’action dès maintenant et commencez à parler anglais GRATUITEMENT !</p>
             <p>(WHATSAPP ET TELEGRAMME)</p>
             <div class="text-end">
                 <a class="btn btn-success text-white" href="https://wa.me/22962907536">
@@ -371,6 +388,23 @@
             </div>
         </div>
     </div>
+    <div class="d-flex align-items-center justify-content-center mt-4">
+      
+        <span>
+            <h2 class="text-center pt-3">Suivez les témoignage des lecteurs ici</h2>
+
+            
+        </span>
+
+</div>
+
+    <div class="d-flex align-items-center justify-content-center mt-4">
+      
+          
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/OKT1XVLQqzw" title="7 mars 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
+
 
     <!-- <div class="container mt-4">
         <div class="row">
